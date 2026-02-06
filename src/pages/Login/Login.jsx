@@ -30,9 +30,9 @@ function Login() {
     useEffect(() => {
         if (currentUser) {
             if (userRole === 'admin') {
-                navigate('/admin');
-            } else {
                 navigate('/dashboard');
+            } else {
+                navigate('/');
             }
         }
     }, [currentUser, userRole, navigate]);

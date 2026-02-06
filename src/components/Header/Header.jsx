@@ -53,11 +53,6 @@ function Header() {
                             Service
                         </Nav.Link>
                         {currentUser && userRole === 'admin' && (
-                            <Nav.Link as={Link} to="/admin" className={isActive('/admin') ? 'active' : ''}>
-                                Admin Panel
-                            </Nav.Link>
-                        )}
-                        {currentUser && userRole === 'user' && (
                             <Nav.Link as={Link} to="/dashboard" className={isActive('/dashboard') ? 'active' : ''}>
                                 Dashboard
                             </Nav.Link>
@@ -102,9 +97,7 @@ function Header() {
                                 <Dropdown.Menu className="user-menu">
                                     <Dropdown.Header>{currentUser.email}</Dropdown.Header>
                                     <Dropdown.Divider />
-                                    {userRole === 'admin' ? (
-                                        <Dropdown.Item as={Link} to="/admin">Admin Panel</Dropdown.Item>
-                                    ) : (
+                                    {userRole === 'admin' && (
                                         <Dropdown.Item as={Link} to="/dashboard">Dashboard</Dropdown.Item>
                                     )}
                                     <Dropdown.Item onClick={handleLogout}>

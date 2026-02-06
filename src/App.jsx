@@ -12,7 +12,6 @@ import Sales from './pages/Sales/Sales';
 import Service from './pages/Service/Service';
 import Login from './pages/Login/Login';
 import Dashboard from './pages/Dashboard/Dashboard';
-import Admin from './pages/Admin/Admin';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -33,7 +32,6 @@ function App() {
                   <Route path="/service" element={<Service />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/dashboard" element={<Dashboard />} />
-                  <Route path="/admin" element={<Admin />} />
                 </Routes>
               </main>
               <Footer />
