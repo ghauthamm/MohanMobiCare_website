@@ -1,0 +1,226 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ff8c00;
+  --primary-light: #ffa500;
+  --primary-dark: #e67e00;
+  --bg-dark: #0d0d0d;
+  --bg-card: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --success: #2ed573;
+  --warning: #ffc107;
+  --danger: #ff4757;
+  --info: #36a2eb;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--primary-color), var(--primary-light));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* Selection Styling */
+::selection {
+  background: rgba(255, 140, 0, 0.3);
+  color: #fff;
+}
+
+/* Link Reset */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+/* Button Reset */
+button {
+  font-family: inherit;
+}
+
+/* Card Styling Override */
+.card {
+  background: transparent;
+  border: none;
+}
+
+/* Form Control Styling */
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 15px rgba(255, 140, 0, 0.2);
+}
+
+/* Badge Styling Override */
+.badge {
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+/* Table Styling Override */
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-striped-bg: rgba(255, 140, 0, 0.05);
+  --bs-table-hover-bg: rgba(255, 140, 0, 0.08);
+}
+
+/* Offcanvas Styling Override */
+.offcanvas {
+  background-color: #1a1a1a;
+}
+
+.offcanvas-header .btn-close {
+  filter: invert(1);
+}
+
+/* Modal Backdrop */
+.modal-backdrop {
+  backdrop-filter: blur(5px);
+}
+
+/* Animation Utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(255, 140, 0, 0.5);
+  }
+}
+
+/* Utility Classes */
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease forwards;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-effect {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Responsive Container Adjustments */
+@media (max-width: 575px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Hide default browser outlines */
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Prevent text selection on buttons */
+button,
+.btn {
+  user-select: none;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fix for iOS input zoom */
+@media screen and (max-width: 767px) {
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}

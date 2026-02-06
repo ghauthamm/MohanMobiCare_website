@@ -1,0 +1,334 @@
+.dashboard-page {
+    min-height: 100vh;
+    background: #0d0d0d;
+    padding: 40px 0 80px;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    margin-bottom: 40px;
+}
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff8c00, #ffa500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #fff;
+    box-shadow: 0 5px 25px rgba(255, 140, 0, 0.4);
+}
+
+.welcome-text h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.welcome-text p {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+/* Stats Cards */
+.stats-row {
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background: linear-gradient(145deg, #1a1a1a 0%, #141414 100%);
+    border: 1px solid rgba(255, 140, 0, 0.1);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 140, 0, 0.3);
+}
+
+.stat-card .card-body {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.service-icon {
+    background: rgba(255, 140, 0, 0.15);
+    color: #ff8c00;
+}
+
+.pending-icon {
+    background: rgba(54, 162, 235, 0.15);
+    color: #36a2eb;
+}
+
+.complete-icon {
+    background: rgba(46, 213, 115, 0.15);
+    color: #2ed573;
+}
+
+.stat-info h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.stat-info p {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Data Card */
+.data-card {
+    background: linear-gradient(145deg, #1a1a1a 0%, #141414 100%);
+    border: 1px solid rgba(255, 140, 0, 0.1);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.data-card .card-header {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 140, 0, 0.15);
+    padding: 25px;
+}
+
+.data-card .card-header h2 {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.section-icon {
+    color: #ff8c00;
+}
+
+.data-card .card-body {
+    padding: 25px;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.empty-icon {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.empty-state h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 25px;
+}
+
+.btn-primary-custom {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #ff8c00, #ffa500);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 140, 0, 0.4);
+}
+
+/* Custom Table */
+.custom-table {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.custom-table thead th {
+    background: rgba(255, 140, 0, 0.1);
+    color: #ff8c00;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border: none;
+}
+
+.custom-table tbody td {
+    padding: 18px 20px;
+    border-bottom: 1px solid rgba(255, 140, 0, 0.1);
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.custom-table tbody tr:hover {
+    background: rgba(255, 140, 0, 0.05);
+}
+
+.service-id {
+    color: #ff8c00;
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 0.95rem;
+}
+
+.completion-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2ed573;
+}
+
+.date-icon {
+    font-size: 0.9rem;
+}
+
+.pending-date {
+    color: rgba(255, 255, 255, 0.4);
+    font-style: italic;
+}
+
+/* Notification Card */
+.notification-card {
+    background: linear-gradient(145deg, #1a1a1a 0%, #141414 100%);
+    border: 1px solid rgba(46, 213, 115, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.notification-card .card-header {
+    background: rgba(46, 213, 115, 0.1);
+    border-bottom: 1px solid rgba(46, 213, 115, 0.2);
+    padding: 25px;
+}
+
+.notification-card .card-header h2 {
+    color: #2ed573;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(46, 213, 115, 0.05);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(46, 213, 115, 0.1);
+}
+
+.notification-item:last-child {
+    margin-bottom: 0;
+}
+
+.notification-icon {
+    font-size: 2.5rem;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-content h5 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.notification-message {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+}
+
+.notification-message strong {
+    color: #2ed573;
+}
+
+.notification-id {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    font-family: monospace;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .dashboard-page {
+        padding: 30px 0 60px;
+    }
+
+    .welcome-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .welcome-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .stat-card .card-body {
+        padding: 20px;
+    }
+
+    .stat-info h3 {
+        font-size: 1.6rem;
+    }
+
+    .data-card .card-header,
+    .data-card .card-body {
+        padding: 20px;
+    }
+
+    .custom-table thead th,
+    .custom-table tbody td {
+        padding: 12px 10px;
+        font-size: 0.85rem;
+    }
+
+    .notification-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}

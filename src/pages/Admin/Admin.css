@@ -1,0 +1,521 @@
+.admin-page {
+    min-height: 100vh;
+    background: #0d0d0d;
+    padding: 30px 0 80px;
+}
+
+/* Admin Header */
+.admin-header {
+    margin-bottom: 30px;
+}
+
+.admin-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.admin-icon {
+    font-size: 3rem;
+    color: #ff8c00;
+    filter: drop-shadow(0 0 15px rgba(255, 140, 0, 0.5));
+}
+
+.admin-title h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.admin-title p {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+/* Admin Tabs */
+.admin-tabs {
+    border-bottom: 1px solid rgba(255, 140, 0, 0.2);
+}
+
+.admin-tabs .nav-link {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    padding: 15px 25px;
+    transition: all 0.3s ease;
+}
+
+.admin-tabs .nav-link:hover {
+    color: #fff;
+}
+
+.admin-tabs .nav-link.active {
+    background: transparent;
+    color: #ff8c00;
+    border-bottom: 3px solid #ff8c00;
+}
+
+/* Stats Cards */
+.stats-row {
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: linear-gradient(145deg, #1a1a1a 0%, #141414 100%);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card .card-body {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+}
+
+.stat-card .stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.products-stat {
+    border-left: 4px solid #ff8c00;
+}
+
+.products-stat .stat-icon {
+    background: rgba(255, 140, 0, 0.15);
+    color: #ff8c00;
+}
+
+.orders-stat {
+    border-left: 4px solid #2ed573;
+}
+
+.orders-stat .stat-icon {
+    background: rgba(46, 213, 115, 0.15);
+    color: #2ed573;
+}
+
+.service-stat {
+    border-left: 4px solid #36a2eb;
+}
+
+.service-stat .stat-icon {
+    background: rgba(54, 162, 235, 0.15);
+    color: #36a2eb;
+}
+
+.pending-stat {
+    border-left: 4px solid #ffc107;
+}
+
+.pending-stat .stat-icon {
+    background: rgba(255, 193, 7, 0.15);
+    color: #ffc107;
+}
+
+.stat-card .stat-info h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.stat-card .stat-info p {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+/* Data Card */
+.data-card {
+    background: linear-gradient(145deg, #1a1a1a 0%, #141414 100%);
+    border: 1px solid rgba(255, 140, 0, 0.1);
+    border-radius: 20px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.data-card .card-header {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 140, 0, 0.15);
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data-card .card-header h2 {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.add-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff8c00, #ffa500);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 140, 0, 0.4);
+}
+
+.data-card .card-body {
+    padding: 25px;
+}
+
+/* Search Bar */
+.search-bar {
+    position: relative;
+    max-width: 400px;
+    margin-bottom: 25px;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 140, 0, 0.6);
+}
+
+.search-bar .form-control {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 140, 0, 0.2);
+    color: #fff;
+    border-radius: 25px;
+    padding: 12px 15px 12px 45px;
+}
+
+.search-bar .form-control:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #ff8c00;
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.2);
+    color: #fff;
+}
+
+.search-bar .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Custom Table */
+.custom-table {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.custom-table thead th {
+    background: rgba(255, 140, 0, 0.1);
+    color: #ff8c00;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 15px;
+    border: none;
+    white-space: nowrap;
+}
+
+.custom-table tbody td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 140, 0, 0.1);
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.custom-table tbody tr:hover {
+    background: rgba(255, 140, 0, 0.05);
+}
+
+.service-id {
+    color: #ff8c00;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+.product-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.product-image {
+    font-size: 1.5rem;
+}
+
+.price-cell {
+    color: #2ed573;
+    font-weight: 600;
+}
+
+.contact-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.contact-cell small {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+}
+
+.problem-cell {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+}
+
+/* Action Buttons */
+.action-btns {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit-btn {
+    background: rgba(54, 162, 235, 0.15);
+    color: #36a2eb;
+}
+
+.edit-btn:hover {
+    background: rgba(54, 162, 235, 0.3);
+}
+
+.delete-btn {
+    background: rgba(255, 71, 87, 0.15);
+    color: #ff4757;
+}
+
+.delete-btn:hover {
+    background: rgba(255, 71, 87, 0.3);
+}
+
+/* Status Select */
+.status-select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 140, 0, 0.2);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    min-width: 130px;
+}
+
+.status-select:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #ff8c00;
+    box-shadow: none;
+    color: #fff;
+}
+
+.status-select option {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+/* Date Input */
+.date-input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 140, 0, 0.2);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    padding: 6px 10px;
+}
+
+.date-input:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #ff8c00;
+    box-shadow: none;
+    color: #fff;
+}
+
+.ready-badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.empty-icon {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.empty-state h4 {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Admin Modal */
+.admin-modal .modal-content {
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 140, 0, 0.2);
+    border-radius: 20px;
+}
+
+.admin-modal .modal-header {
+    border-bottom: 1px solid rgba(255, 140, 0, 0.2);
+    padding: 20px 25px;
+}
+
+.admin-modal .modal-header .modal-title {
+    color: #fff;
+    font-weight: 600;
+}
+
+.admin-modal .modal-header .btn-close {
+    filter: invert(1);
+}
+
+.admin-modal .modal-body {
+    padding: 25px;
+}
+
+.admin-modal .form-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+.admin-modal .form-control,
+.admin-modal .form-select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 140, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.admin-modal .form-control:focus,
+.admin-modal .form-select:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #ff8c00;
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.2);
+    color: #fff;
+}
+
+.admin-modal .form-select option {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.cancel-btn {
+    flex: 1;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cancel-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.submit-btn {
+    flex: 1;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff8c00, #ffa500);
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    box-shadow: 0 5px 20px rgba(255, 140, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .admin-title {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .admin-title h1 {
+        font-size: 1.6rem;
+    }
+
+    .admin-tabs .nav-link {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+
+    .data-card .card-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .custom-table {
+        font-size: 0.85rem;
+    }
+
+    .custom-table thead th,
+    .custom-table tbody td {
+        padding: 10px 8px;
+    }
+}
